@@ -1,112 +1,58 @@
-@charset "utf-8";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介</title>
+    <meta name="description" content="自己紹介ページ">
+    <link rel="stylesheet" href="./style.css">
 
-body {
-  background-color: rgb(255, 248, 225);
-  color: #222222;
-  margin-left:60px;
-   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),  /* ←白の半透明を重ねる例 */
-    url(images/背景.jpg);
-  background-size: cover;
-  background-repeat: repeat;
-
-}
-
-header{
-    background-color: #052c7f56;
-    margin-left:-60px;
-    height:55px;
-    text-align:right;
+</head>
   
-}
+   
 
-header a{
-    display: inline-block;
-    margin-right:60px;
-    margin-top:15px;
-}
+<body>
+     <header> 
+      <a href="お問い合わせ">お問い合わせ</a>
+    </header>    
+    
+    <main>
+        <h1>自己紹介</h1>
+        <div class="container">
+        <img src="images/自己紹介.jpg" alt="">
+        <p> <strong>佐藤佑香</strong> <span style="margin-left: 1em;"></span> (Sato Yuka)
+            <br>
+            <br>
+            大学３年次に行った中国・上海への語学留学を通して、スマホ一台で生活が完結する中国のIT技術に触れ、<br>
+            将来はIT業界に携わりたいと考えるようになりました。<br>
+            帰国後はProgateやYouTubeを通してHTMLやCSSを学び、コードが実際に形になることに感動を覚えました。<br>
+            これからより多くの言語を学んで日々成長したいと思っています。</p>
+      </div>
+        <h2 class="center">プロフィール</h2>
+         <div class="profile">
+          <p>2018年4月　静岡県立静岡高校　入學　</p>
+          <p>2021年3月　静岡県立静岡高校　卒業　</p>
+          <p>2021年4月　神戸市外国語外国学部中国学科　入学</p>
+        </div>
+    </main>
+    
+ <h2 class="center">大学生活</h2>
+ <div class="image-row">
+   <div class="image-item">
+     <img src="./images/サークル活動.jpg" alt="説明1">
+     <p>サークル活動では、証明チーフとして、部署同士の連携に努めました</p>
+   </div>
+   <div class="image-item">
+     <img src="images/留学写真.jpg" alt="説明2">
+     <p>上海の復旦大学に語学留学し、様々な国籍の同級生と共に学びました</p>
+   </div>
+   <div class="image-item">
+     <img src="images/外灘.jpg" alt="説明3">
+     <p>上海の景色は、日本とはまた違って刺激的でした。</p>
+   </div>
+ </div>
 
-.profile{
-    margin-left:350px;
-}
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
 
-.center{
-    text-align: center;
-    margin: bottom 15px;
-    text-decoration: underline;
-}
-
-.profile{
-    margin-bottom:60px;
-}
-
-.container{
-    display:grid;
-    grid-template-columns:200px 1000px;
-}
-
-.container img{ 
-    grid-column-start:1;
-    grid-column-end:2;
-}
-
-.container p{
-    grid-column-start:2;
-    grid-column-end:3;
-}
-
-strong{
-    font-size:40px;
-}
-main img{
-  width: 150px;
-  height: auto;
-  object-fit: cover;   /* 画像の比率を維持しつつ枠に収める */
-  border-radius: 30%; 
-  
-}
-
-.image-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3列均等 */
-  gap: 24px;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 24px 0;
-}
-
-.image-item {
-  text-align: center;
-  background: #fffbe9;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(100,120,140,0.06);
-  padding: 16px 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.image-item img {
-  width: 100%;
-  max-width: 180px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 8px;
-  background: #eee;
-  box-shadow: 0 2px 8px rgba(100,120,140,0.09);
-}
-
-.image-item p {
-  margin-top: 12px;
-  font-size: 1em;
-  color: #444;
-  line-height: 1.5;
-  background: rgba(255,255,255,0.7);
-  padding: 6px 8px;
-  border-radius: 6px;
-}
+</body>
+</html>
