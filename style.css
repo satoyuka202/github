@@ -6,7 +6,7 @@ body {
   margin-left:60px;
    background-image:
     linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),  /* ←白の半透明を重ねる例 */
-    url(images/背景.jpg);
+    url(背景.jpg);
   background-size: cover;
   background-repeat: repeat;
 
