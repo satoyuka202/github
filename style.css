@@ -148,7 +148,7 @@ strong{
 
 
 
- @media screen and (max-width: 768px) {
+/*  @media screen and (max-width: 768px) {
   body {
     background-color: rgb(255, 248, 225);
     color: #222;
@@ -242,3 +242,4 @@ strong{
     padding: 10px;
   }
 }
+ */
